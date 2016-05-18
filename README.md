@@ -1,2 +1,2 @@
 # html-and-css
-please go to module directory to find excersices
+please go to modules directory to find excersices
