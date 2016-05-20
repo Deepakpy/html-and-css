@@ -1,0 +1,15 @@
+.default{
+	background-color:  #ff9900;
+}
+.inline{
+	background-color:  #0000e6;
+	display: inline;
+}
+.inlineblock{
+	background-color:  #009900;
+	display: inline-block;
+}
+p small{
+	position: relative;
+	top:-22px;
+}
