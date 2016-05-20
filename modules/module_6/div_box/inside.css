@@ -1,0 +1,33 @@
+ .outer,
+ .inner,
+ .core{
+ 	color:#404040;
+ 	text-align: center;
+ }
+
+
+.outer{
+	background-color:#999999;
+	width:70%;
+	height:370px;
+	margin: 0px;
+	border: 2px solid #ff704d;
+	
+	}
+.inner{
+	background-color:#fff;
+	width:90%;
+	height:266px;
+	border: 1.5px dashed #2e2eb8;
+	margin:auto;
+	border-radius: 0px;
+	
+}
+.core{
+	background-color:#d9d9d9;
+	width:90%;
+	height:169px;
+	border:1px dotted #009900;
+	margin:auto;
+	border-radius:5px;
+}
