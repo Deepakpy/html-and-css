@@ -1,0 +1,37 @@
+body{
+	
+	background: #000033;
+	color:#303030;
+}
+
+.back{
+	background:#000033 url("https://dridrive.files.wordpress.com/2015/04/atlas.jpg") 0 0 no-repeat;	
+	background-size: 100%;
+}
+
+div{
+	background: #000033;
+	width: 95%;
+	height: 905px;
+	border:#538cc6 solid 35px;
+	margin:auto;
+	color:#fff;
+	
+}
+ul{
+	list-style-type: none;
+
+}
+li{
+	display: inline-block;
+	margin:350px 55px;
+}
+.first{
+	margin-left: 16%;
+}
+p{
+	
+	text-transform: uppercase;
+	color:#fff;
+	text-align: center;
+}
