@@ -1,0 +1,23 @@
+body{
+	background: #ffffe0 url("http://www.honda2wheelersindia.com/CBHornet160R/wp-content/uploads/2015/12/about-pic1.png") repeat 0 100%;
+	color: #808080;
+}
+
+img{
+	width: 500px;
+	height: 300px;
+	float: right;
+}
+.bod{
+	border:3px solid #0a0a0a;
+	padding: 3px;
+	background-color: #fff;
+}
+a{
+	text-decoration: none;
+	color:#0000ff;
+}
+.fo{
+	font:italic small-caps 500 30px/15px "open sans",sans-serif;
+}
+
