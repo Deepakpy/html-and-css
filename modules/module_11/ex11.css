@@ -1,0 +1,120 @@
+body{
+	background-color: #e0e0eb;
+	color:#808080;
+	font: 13px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+form{
+	background-color: #fff;
+	border-top: 5px solid #e60000;
+	width:30%;
+	height: 450px;
+	margin: 80px auto;
+
+}
+/*.user{
+	 background-image: url(http://youarelistening.to/images/icon_email.png)no-repeat ;
+}
+
+.pass{
+	background-image: url(http://www.avg.com/content/dam/feature-icons/90x90/feature-icon-lock-blue-90.png) no-repeat;
+}*/
+
+.line{
+	border-top:0;
+	border-right: 0;
+	border-left: 0;
+
+	padding:5px auto;
+}
+.btm{
+	border-bottom: 1px solid #808080;
+	width: 70%;
+	
+}
+input[type=text],
+input[type=password]{
+   
+    padding: 12px 20px;
+    
+    box-sizing: border-box;
+}
+input[type=text]{
+	background:#fff url("http://youarelistening.to/images/icon_email.png") no-repeat -1px 10px;
+	background-size: 20px 20px;
+}
+input[type=password]{
+	background:#fff url("http://www.avg.com/content/dam/feature-icons/90x90/feature-icon-lock-blue-90.png") no-repeat -1px 8px;
+	background-size: 20px 18px;
+}
+input[placeholder~="●●●●●"]{
+	font-size: 13px;
+	padding: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+fieldset{
+	border:0;
+	margin: 10px auto;
+	text-align: center;
+}
+button{
+	background-color: #0099ff;
+	border:0;
+	padding:10px 100px;
+	color:#fff;
+	cursor: pointer;
+}
+a{
+	text-decoration:none;
+	color: #0099ff;
+	background-position: 0 0;
+  	background-repeat: no-repeat; 
+}
+
+.checkbox{
+	width: 16px;
+	height: 16px;
+	background-color: #0099ff;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	
+	
+}
+.checkbox input[type=checkbox]{
+	visibility: hidden;
+	position: relative;
+}
+.checkbox label{
+	width: 14.5px;
+	height: 14.5px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+
+	background-color: #fff;
+	cursor: pointer;
+}
+.checkbox label:before{
+	content: "";
+	
+	width: 8px;
+	height: 5px;
+	border:1px solid #0099ff;
+	position: absolute;
+	border-top: 0;
+	border-right: 0;
+	transform: rotate(-45deg);
+	top: 2px;
+	left: 3px;
+	opacity: 0;
+	
+}
+
+.checkbox input[type=checkbox]:checked + label:before{
+	opacity: 1;
+}
+
+.checkbox input[type=checkbox]:checked + label{
+	background-color: #fff;
+}
