@@ -1,0 +1,190 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.bg{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #0275d8;
+	text-align: center;
+	text-decoration:none; 
+}
+.bg:hover{
+	color: #fff;
+	cursor: pointer;
+	background-color: #025197;
+}
+
+header a,header ul{
+	
+	padding: 10px 10px;
+	color: #563d7c;
+}
+
+body {
+  font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  text-align: center;
+}
+
+
+
+a {
+  color: #0087cc;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff7b29;
+}
+nav{
+	
+	top:30px;
+}
+
+/*fine till here*/
+
+.bg1{
+	background-color: #563d7c;
+	color:#fff;
+	padding: 30px;
+}
+.center{
+	margin: 40px 44% 30px;
+	border: 1px solid #fff;
+	border-radius: 15%;
+	font-size: 100px;
+	line-height:120px;
+	
+}
+.max{
+	font-size: 20px;
+	line-height: 20px;
+}
+.light{
+	color:#666666;
+}
+.btn{
+	border:1px solid #fff;
+	margin: 20px 41%;
+	border-radius: 5px;
+	padding:10px 2px; 
+	color: #fff;
+	cursor:pointer;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #563d7c;
+}
+span{
+	padding: 10px;
+}
+
+
+.space{
+	margin: 40px 0;
+}
+
+
+
+
+@media all and (max-width: 768px){
+
+
+
+
+input {
+  display: none;
+}
+/*label,
+ul {
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+}*/
+label {
+  color: #0087cc;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 9px;
+  transition: all .15s ease;
+  float:right;
+}
+p{
+	clear: both;
+}
+label:hover {
+  color: #ff7b29;
+}
+input:checked + label {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #9799a7;
+}
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .15s ease;
+}
+input:checked ~ nav {
+  max-height: 800px;
+}
+ul {
+  list-style: none;
+  margin: 8px 0 0 0;
+  width: 100px;
+}
+ul:last-child{
+	margin-top: 0px;
+}
+/*li {
+  border-bottom: 1px solid #cecfd5;
+}*/
+li:last-child {
+  border-bottom: 0;
+}
+
+
+}
+
+
+@media all and (min-width: 768px){
+ul{
+	list-style: none;
+	display: inline-block;
+}
+
+li{
+	display: inline-block;
+}
+input,label{
+	display: none;
+}
+header>a{
+	float: left;
+	 
+}
+header>a{
+	margin-top: 10px;
+	padding-top: 10px;
+	font-weight: 500;
+	font-size: 20px;
+	margin-left: 40px;
+}
+
+
+nav ul:first-child{
+	float: left;
+}
+nav ul:last-child{
+	float: right;
+	right: 30px;
+
+}
+p{
+	clear: both;
+}
+
+}
