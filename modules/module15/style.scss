@@ -1,0 +1,27 @@
+$blue:#708c87;
+$margin:5%;
+$cream:#f2efeb;
+$cream2:$cream - 100;
+
+
+body{
+	background:#262626;
+	font-family:helvetica,ariel,sans-serif;
+}
+p{margin:20px 0 0 $margin}
+header{
+	margin: 20px 0 0 $margin;
+}
+h1{color:#708c87;}
+h2{
+	color:#708c87; margin: 10px $margin+5%;
+}
+a{
+	color:#708c87;
+}
+
+.grad{
+	padding: 1%;
+	background-color: $cream;
+	background-image: -webkit-linear-gradient(top,$cream,cream2);
+}

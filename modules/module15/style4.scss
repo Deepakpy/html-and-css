@@ -1,0 +1,37 @@
+$blue:#708c87;
+$margin:5%;
+$cream:#f2efeb;
+$cream2:$cream - 100;
+@mixin border-radius($radius: 20px) {
+	border-radius: $radius;
+}
+
+body{
+	background:#262626;
+	font-family:helvetica,ariel,sans-serif;
+}
+p{margin:20px 0 0 $margin}
+header{
+	margin: 20px 0 0 $margin;
+
+	h1{color:$blue;}
+	h2{
+		color:$blue; margin: 10px $margin+5%;
+}
+}
+a{color:$blue;}
+
+.grad{
+	@include border-radius;
+	padding: 1%;
+	background-color: $cream;
+	background-image: -webkit-linear-gradient(top,$cream,cream2);
+	  .intro, .feature{ background-color: #333; @include border-radius;	
+		.par1{
+			color: $blue+100;
+		 a{font-size: 20px;background:$cream; @include border-radius(10px);}
+		 a:hover{background:$cream - 100;}
+		 }
+		}
+ .feature{border:1px solid blue;}
+}
