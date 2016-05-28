@@ -1,0 +1,64 @@
+$blue:#708c87;
+$margin:5%;
+$cream:#f2efeb;
+$cream2:$cream - 100;
+@mixin border-radius($radius: 20px) {
+	border-radius: $radius;
+}
+*{
+	margin: 0;
+}
+body{
+	background:#262626;
+	font-family:helvetica,ariel,sans-serif;
+}
+p{margin:20px 0 0 $margin}
+header{
+	margin: 20px 0 0 $margin;
+
+	h1{color:$blue;}
+	h2{
+		color:$blue; margin: 10px $margin+5%;
+}
+}
+p{margin:20px $margin;}
+a{color:$blue;}
+
+.grad{
+	@include border-radius;
+	padding: 1%;
+	background-color: $cream;
+	background-image: -webkit-linear-gradient(top,$cream,cream2);
+	  .intro{ background:fade-out(#333,0.7); @include border-radius;width: round(percentage(550px/1440px));float: left;
+		}
+ 	.feature{@extend .intro; width: round(percentage(890px/1440px));float:right;	}
+}
+ul.social-links li{
+	list-style: none;
+	 a{
+	 	display: block;float: left;width: 65px;height: 65px; text-indent: -999px;
+	 }
+}
+$icons:(twitter,facebook,youtube,rss);
+@each $social in $icons {
+	.#{$social}{
+		background: url("image/#{$social}.png") no-repeat;
+	}
+}
+
+
+
+
+
+@each $p in (
+	one black+300,
+	two black+20,
+	three black+40,
+	four black+60
+){
+	.#{nth($p,1)}{ background:#{nth($p,2)}; }
+}
+
+.clearfix:before, .clearfix:after{content: "";display: table;}
+.clearfix:after{clear: both;}
+.clearfix{*zoom:1;}
