@@ -1,0 +1,55 @@
+$blue:#708c87;
+$margin:5%;
+$cream:#f2efeb;
+$cream2:$cream - 100;
+@mixin border-radius($radius: 20px) {
+	border-radius: $radius;
+}
+*{
+	margin: 0;
+}
+body{
+	background:#262626;
+	font-family:helvetica,ariel,sans-serif;
+}
+p{margin:20px 0 0 $margin}
+header{
+	margin: 20px 0 0 $margin;
+
+	h1{color:$blue;}
+	h2{
+		color:$blue; margin: 10px $margin+5%;
+}
+}
+a{color:$blue;}
+
+.grad{
+	@include border-radius;
+	padding: 1%;margin-bottom: 5px;
+	background-color: $cream;
+	background-image: -webkit-linear-gradient(top,$cream,cream2);
+	  .intro{ background-color: #333; @include border-radius;	 margin-bottom: 10px;
+		.par1{
+			color: $blue+100;
+		 a{font-size: 20px;background:$cream; @include border-radius(10px);}
+		 a:hover{background:$cream - 100;}
+		 }
+		}
+ 	.feature{@extend .intro; border:1px solid yellow;	}
+}
+ul.social-links li{
+	list-style: none;
+	 a{
+	 	display: block;float: left;width: 65px;height: 65px; text-indent: -999px;
+	 }
+}
+$icons:(twitter,facebook,youtube,rss);
+@each $social in $icons {
+	.#{$social}{
+		background: url("image/#{$social}.png") no-repeat;
+	}
+}
+
+.clearfix:before, .clearfix:after{content: "";display: table;}
+.clearfix:after{clear: both;}
+.clearfix{*zoom:1;}
