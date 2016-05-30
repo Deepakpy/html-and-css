@@ -1,0 +1,41 @@
+
+//even if $width is given in argument it will always takes the global value
+
+@mixin phone($width:80%) {
+	@media only screen and (max-width:480px){
+		@content;
+	}
+}
+$width:50%;
+.main{
+	.header{
+		width:80%;
+		margin:0 auto;
+		height: 200px;
+	}
+	@include phone{
+		.header{
+			width:$width;
+		}
+	}
+}
+
+
+
+
+
+
+
+%blue{
+	color:white;
+	background-color:blue;
+	font-size:14px;
+}
+
+.sign{
+	@extend %blue;
+}
+
+.box{
+	@extend %blue;
+}
