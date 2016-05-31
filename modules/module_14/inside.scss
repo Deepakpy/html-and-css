@@ -1,0 +1,40 @@
+$color:#999;
+$width:90%;
+$height:370px;
+$margin:auto;
+
+.base{
+	text-align:center;
+	color:#404040;
+
+}
+
+.outer{
+	@extend .base;
+	background-color:$color - #002f00;
+	width:$width;
+	height:$height + 70;
+	margin:0;
+	border: 2px solid $color - 50;
+	.inner{
+		@extend .base;
+		background-color:$color + 86;
+		width:$width;
+		height:$height - 34;
+		border:1.5px dashed $color - 222;
+		margin:$margin;
+		border-radius:0px;
+		.core{
+			@extend .base;
+			background-color:$color;
+			width:$width;
+			height:$height - 131px;
+			border:1px dotted #009900;
+			margin:$margin;
+			border-radius:5px;
+
+		} 
+
+	}
+
+}

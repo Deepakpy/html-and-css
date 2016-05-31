@@ -1,0 +1,30 @@
+.base, .outer, .outer .inner, .outer .inner .core {
+  text-align: center;
+  color: #404040;
+}
+
+.outer {
+  background-color: #996a99;
+  width: 90%;
+  height: 440px;
+  margin: 0;
+  border: 2px solid #676767;
+}
+.outer .inner {
+  background-color: #efefef;
+  width: 90%;
+  height: 336px;
+  border: 1.5px dashed black;
+  margin: auto;
+  border-radius: 0px;
+}
+.outer .inner .core {
+  background-color: #999;
+  width: 90%;
+  height: 239px;
+  border: 1px dotted #009900;
+  margin: auto;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=inside1.css.map */
