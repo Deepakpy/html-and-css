@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>collapse accordions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="bootstrap.css">
+  
+  
+</head>
+<body>
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapse Group 1</a></h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse in">
+			 <div class="panel-body">hi, this is the panel body and the first accordion so check wheter it's correct
+			 </div>
+				
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-parent="#accordion" data-toggle="collapse" href="#collapse2">Collapse Group 2</a>
+				</h4>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse in">
+				<div class="panel-body">ok lets just write simple and easy ways to get out of mncs and do something really useful for us and the society arround us
+				</div>
+				
+			</div>
+		</div>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">touch accordion</a></h4>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse in">
+				<div class="panel-body">This is the 3rd panel <br>
+							panel-group accordion <br> panel panel-default<br>panel-heading <br> panel-title <br>
+							data-toggle="collapse" data-parnet="#accordion" href="#collapse*"<br>
+							id="collapse*" panel-collapse collapse in<br>
+						panel-body
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+  <script src="bootstrap.js"></script>
+</body>
